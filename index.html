@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section class="vh-100 bg-image">
+        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+            <div class="container h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-9 col-lg-7 col-xl-8">
+                        <div class="card" style="border-radius: 15px;">
+                            <div class="card-body p-5">
+                                <h2 class="text-uppercase text-center mb-5">Hotel Booking Form</h2>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="name">Your Name</label>
+                                                <input type="text" id="name" class="form-control form-control-lg"
+                                                    required />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="checking_date">Checking
+                                                    Date</label>
+                                                <input type="date" id="checking_date"
+                                                    class="form-control form-control-lg" required />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="total_no_days">Total No of
+                                                    Days</label>
+                                                <input type="number" id="total_no_days"
+                                                    class="form-control form-control-lg" min="1" required />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="total_Persons">Total No of
+                                                    Persons</label>
+                                                <input type="number" id="total_Persons"
+                                                    class="form-control form-control-lg" min="1" required />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="room_type">Room Type</label>
+                                                <select id="room_type" class="form-control" name="">
+                                                    <option value="">--- Select the Room Type ---</option>
+                                                    <option value="2500">Delux Room (2500/-)</option>
+                                                    <option value="4000">Suite Room (4000/-)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label">Amenities</label>
+                                                <div>
+                                                    <input type="checkbox" id="ac" class="form-check-input" name="amenities[]" value="1000">
+                                                    <label for="ac" class="form-check-label">AC (1000/-)</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="locker" class="form-check-input" name="amenities[]" value="300">
+                                                    <label for="locker" class="form-check-label">Locker (300/-)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-6">
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="advance_payment">Advance
+                                                    Payment</label>
+                                                <input type="number" id="advance_payment"
+                                                    class="form-control form-control-lg" required />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="balance_amount">Balance
+                                                    Amount</label>
+                                                <input type="number" id="balance_amount"
+                                                    class="form-control form-control-lg" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button type="button"
+                                            class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" onclick="alert('Registration Successful')">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
